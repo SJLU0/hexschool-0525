@@ -157,6 +157,27 @@ body {
 .section-3 {
   margin: 80px 312px;
 }
+.search-wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.search-wrapper .bi-search {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #4b4b4b;
+  font-size: 20px;
+}
+
+.search {
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 16px 48px;
+  border: 1px solid #4b4b4b;
+}
 
 /* 小卡主欄位 */
 .card-container {
@@ -167,12 +188,20 @@ body {
 
 .card {
   width: 30%;
+  margin: 40px 0;
 }
 
 /* 頁碼 */
 
 .pages {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 8px 20px;
+}
+
+.pages a:hover {
+  color: gray;
 }
 /* footer 頁尾 */
 .footer {
@@ -188,7 +217,6 @@ body {
   display: flex;
 }
 .copyright {
-  background: gray;
   text-align: center;
   padding: 24px 0;
 }
