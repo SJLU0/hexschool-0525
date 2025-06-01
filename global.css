@@ -1,0 +1,194 @@
+/* 匯入思源黑體字體，這行原本在codepen預設 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+/* === Reset CSS === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 字體 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 150%;
+}
+/* header 頁首 */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 24px 0;
+  width: 100%;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header a:hover {
+  color: #666666;
+}
+
+/*人物圖片banner*/
+.section-1 {
+  display: flex;
+}
+
+.person {
+  width: 50%;
+  max-width: 100%; /*最大寬度不超過父容器*/
+}
+
+.banner-text-1 {
+  width: 50%;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-blog-text {
+  color: #0027d5;
+  font-weight: 900;
+  font-size: 120px;
+}
+.job-title {
+  color: #0027d5;
+  font-weight: 700;
+  font-size: 120px;
+  font-size: 28px;
+}
+
+/*電腦圖片banner*/
+.section-2 {
+  display: flex;
+  gap: 24px;
+}
+
+.computer {
+  width: 50%;
+  max-width: 100%; /*最大寬度不超過父容器*/
+}
+
+.banner-text-2 {
+  width: 50%;
+  background: lightgray;
+  padding: 80px 120px 80px 0;
+}
+
+/*日期到閱讀內文設定*/
+.date {
+  font-weight: 500;
+}
+
+.tag {
+  color: #0027d5;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* 最新文章 */
+.hot {
+  color: #ffffff;
+  background: #0027d5;
+  padding: 6px 12px;
+  border-radius: 40px;
+  font-weight: 500;
+}
+
+.subtitle {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* 搜尋欄以下 */
+.section-3 {
+  margin: 80px 312px;
+}
+
+/* 小卡主欄位 */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  width: 30%;
+}
+
+/* 頁碼 */
+
+.pages {
+  text-align: center;
+}
+/* footer 頁尾 */
+.footer {
+  padding: 80px 312px;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.email {
+  font-size: 32px;
+}
+.icons {
+  display: flex;
+}
+.copyright {
+  background: gray;
+  text-align: center;
+  padding: 24px 0;
+}
