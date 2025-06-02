@@ -47,16 +47,19 @@ ol {
 /* 字體 */
 body {
   font-family: "Noto Sans TC", sans-serif;
+  background: lightblue;
 }
 
 .wrapper {
   max-width: 1920px;
+  min-width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 150%;
 }
+
 /* header 頁首 */
 .header {
   display: flex;
@@ -75,7 +78,7 @@ body {
 }
 
 .header a:hover {
-  color: #666666;
+  color: orangered;
 }
 
 /*人物圖片banner*/
@@ -85,7 +88,8 @@ body {
 
 .person {
   width: 50%;
-  max-width: 100%; /*最大寬度不超過父容器*/
+  max-width: 100%;
+  /*最大寬度不超過父容器*/
 }
 
 .banner-text-1 {
@@ -102,12 +106,15 @@ body {
   color: #0027d5;
   font-weight: 900;
   font-size: 120px;
+  line-height: 150%;
 }
+
 .job-title {
   color: #0027d5;
   font-weight: 700;
   font-size: 120px;
   font-size: 28px;
+  line-height: 150%;
 }
 
 /*電腦圖片banner*/
@@ -118,13 +125,16 @@ body {
 
 .computer {
   width: 50%;
-  max-width: 100%; /*最大寬度不超過父容器*/
+  max-width: 100%;
+  /*最大寬度不超過父容器*/
 }
 
 .banner-text-2 {
   width: 50%;
-  background: lightgray;
   padding: 80px 120px 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /*日期到閱讀內文設定*/
@@ -136,6 +146,7 @@ body {
   color: #0027d5;
   font-size: 24px;
   font-weight: 500;
+  line-height: 150%;
 }
 
 /* 最新文章 */
@@ -145,18 +156,39 @@ body {
   padding: 6px 12px;
   border-radius: 40px;
   font-weight: 500;
+  font-size: 16px;
+  vertical-align: top;
 }
 
 .subtitle {
   color: #000000;
   font-size: 28px;
   font-weight: 700;
+  line-height: 150%;
+}
+
+.content {
+  margin-bottom: 8px;
+}
+
+.read-more {
+  border: 1px #000000 solid;
+  padding: 8px 16px;
+  border-radius: 40px;
+  width: 100px;
 }
 
 /* 搜尋欄以下 */
 .section-3 {
-  margin: 80px 312px;
+  margin: 80px 5%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .search-wrapper {
   width: 100%;
   position: relative;
@@ -187,8 +219,16 @@ body {
 }
 
 .card {
-  width: 30%;
+  flex: 0 0 30%;
+  max-width: 416px;
   margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* 頁碼 */
@@ -201,22 +241,32 @@ body {
 }
 
 .pages a:hover {
-  color: gray;
+  color: orangered;
 }
+
 /* footer 頁尾 */
 .footer {
-  padding: 80px 312px;
-  background: lightgray;
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
 }
+
 .email {
   font-size: 32px;
 }
+
 .icons {
   display: flex;
 }
+
 .copyright {
   text-align: center;
   padding: 24px 0;
+}
+
+/* 手機、平板斷點，螢幕寬度「小於或等於 768px」生效 */
+@media (max-width: 768px) {
 }
