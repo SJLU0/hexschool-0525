@@ -47,12 +47,10 @@ ol {
 /* 字體 */
 body {
   font-family: "Noto Sans TC", sans-serif;
-  background: lightblue;
 }
 
 .wrapper {
   max-width: 1920px;
-  min-width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -112,7 +110,6 @@ body {
 .job-title {
   color: #0027d5;
   font-weight: 700;
-  font-size: 120px;
   font-size: 28px;
   line-height: 150%;
 }
@@ -215,7 +212,7 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 12px;
 }
 
 .card {
@@ -267,6 +264,89 @@ img {
   padding: 24px 0;
 }
 
-/* 手機、平板斷點，螢幕寬度「小於或等於 768px」生效 */
-@media (max-width: 768px) {
+/* 手機、平板斷點，螢幕寬度「小於或等於 1200px」生效 */
+@media (max-width: 1200px) {
+  /* 人物banner */
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person {
+    max-width: 100%;
+    /*最大寬度不超過父容器*/
+  }
+
+  .banner-text-1 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .big-blog-text {
+    font-size: 52px;
+    line-height: 150%;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .computer {
+    max-width: 100%;
+    /*最大寬度不超過父容器*/
+  }
+
+  .banner-text-2 {
+    max-width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+  }
+  .bi-search {
+    margin-left: 400px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .card {
+    width: 351px;
+    margin: 12px 0;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .pages {
+    margin-top: 24px;
+    padding: 8px 20px;
+  }
+  .footer {
+    display: none;
+  }
+  .copyright {
+    padding: 24px 0;
+  }
 }
